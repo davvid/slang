@@ -534,7 +534,7 @@ write_basic_package_version_file(
 # SlangConfig.cmake will define slang::slang target that can be linked with using
 # target_link_libraries. It will also define SLANG_EXECUTABLE export variable that
 # should point to slangc if SLANG_ENABLE_SLANGC is ON.
-if (WIN32)
+if(WIN32)
     set(SLANG_CMAKE_CONFIG_DIR cmake)
 else()
     set(SLANG_CMAKE_CONFIG_DIR ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME})
